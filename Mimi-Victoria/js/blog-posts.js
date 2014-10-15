@@ -5,6 +5,13 @@ window.onload = function () {
   document.getElementById('author_2').textContent = localStorage.getItem('author2');
   document.getElementById('title_2').textContent = localStorage.getItem('title2');
   document.getElementById('subtitle_2').textContent = localStorage.getItem('subtitle2');
+
+  // document.getElementById('author1').value = "";
+  // document.getElementById('title1').value = "";
+  // document.getElementById('subtitle1').value = "";
+  // document.getElementById('author2').value = "";
+  // document.getElementById('title2').value = "";
+  // document.getElementById('subtitle2').value = "";
 }
 
 if (window.localStorage) {
@@ -22,36 +29,25 @@ if (window.localStorage) {
     txtTitle2.value = localStorage.getItem('title2');
     txtSubtitle2.value = localStorage.getItem('subtitle2');
 
-    txtAuthor1.addEventListener('click', function () {    // Data saved on keyup
+    submit1.addEventListener('click', function () {    // Data saved on keyup
       localStorage.setItem('author1', txtAuthor1.value);
-    }, false);
-
-    txtTitle1.addEventListener('click', function () {      // Data saved on keyup
+      // document.getElementById('author1').value = "";
       localStorage.setItem('title1', txtTitle1.value);
-    }, false);
-
-    txtSubtitle1.addEventListener('click', function () {      // Data saved on keyup
+      // document.getElementById('title1').value = "";
       localStorage.setItem('subtitle1', txtSubtitle1.value);
+      // document.getElementById('subtitle1').value = "";
     }, false);
 
-    txtAuthor2.addEventListener('click', function () {      // Data saved on keyup
+
+    submit2.addEventListener('click', function () {      // Data saved on keyup
       localStorage.setItem('author2', txtAuthor2.value);
-    }, false);
-
-    txtTitle2.addEventListener('click', function () {      // Data saved on keyup
+      // document.getElementById('author2').value = "";
       localStorage.setItem('title2', txtTitle2.value);
-    }, false);
-
-    txtSubtitle2.addEventListener('click', function () {      // Data saved on keyup
+      // document.getElementById('title2').value = "";
       localStorage.setItem('subtitle2', txtSubtitle2.value);
+      // document.getElementById('subtitle2').value = "";
     }, false);
-  }
-
-document.getElementById('submit').addEventListener('click', function () {
-  localStorage.setItem('author1', txtAuthor1.value);
-  localStorage.setItem('title1', txtTitle1.value);
-  localStorage.setItem('subtitle1', txtSubtitle1.value);
-}, false);
+}
 
 document.getElementById('submit1').onclick = function(){
   document.getElementById('author_1').textContent = localStorage.getItem('author1');
@@ -59,7 +55,6 @@ document.getElementById('submit1').onclick = function(){
   document.getElementById('subtitle_1').textContent = localStorage.getItem('subtitle1');
   return false;
 };
-
 
 document.getElementById('submit2').onclick = function(){
   // function Post (author, title, subtitle) {
@@ -81,6 +76,5 @@ document.getElementById('submit2').onclick = function(){
   // document.getElementById('author_2').textContent = blogpost2.author;
   // document.getElementById('title_2').textContent = blogpost2.title;
   // document.getElementById('subtitle_2').textContent = blogpost2.subtitle;
-
   return false;
 };
