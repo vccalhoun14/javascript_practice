@@ -26,11 +26,6 @@ var subtitle = document.getElementById('subtitle1').value;
 var blogpost1 = new Post(author, title, subtitle);
 
 
-
-/////////////////
-
-
-
 //The meat of our code
 if (window.localStorage) {
 
@@ -39,26 +34,19 @@ if (window.localStorage) {
   blogpost1.title = localStorage.getItem('title1');
   blogpost1.subtitle = localStorage.getItem('subtitle1');
 
-  //Makes the text last saved in local storage
-  //load after page refresh
-  var txtAuthor = document.getElementById('author1');
-  var txtTitle = document.getElementById('title1');
-  var txtSubtitle = document.getElementById('subtitle1');
-
-  txtAuthor.value = localStorage.getItem('author1');
-  txtTitle.value = localStorage.getItem('title1');
-  txtSubtitle.value = localStorage.getItem('subtitle1');
-
   //What happens when we click submit
   document.getElementById('submit1').onclick = function() {
-    localStorage.setItem('author1', document.getElementById('author1').value);
-    localStorage.setItem('title1', document.getElementById('title1').value);
-    localStorage.setItem('subtitle1', document.getElementById('subtitle1').value);
+    //Reset the value of instance
+    blogpost1.author = document.getElementById('author1').value;
+    blogpost1.title = document.getElementById('title1').value;
+    blogpost1.subtitle = document.getElementById('subtitle1').value;
 
-    // localStorage.setItem('author1', blogpost1.author);
-    // localStorage.setItem('title1', blogpost1.title);
-    // localStorage.setItem('subtitle1', blogpost1.subtitle);
+    //Set localStorage items to blogpost attributes
+    localStorage.setItem('author1', blogpost1.author);
+    localStorage.setItem('title1', blogpost1.title);
+    localStorage.setItem('subtitle1', blogpost1.subtitle);
 
+    //Set h1, h2, and p tag to the value in localStorage items
     document.getElementById('author_1').textContent = localStorage.getItem('author1');
     document.getElementById('title_1').textContent = localStorage.getItem('title1');
     document.getElementById('subtitle_1').textContent = localStorage.getItem('subtitle1');
