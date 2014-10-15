@@ -48,6 +48,15 @@ a {
   font-size: $gigantor;
 }
 
+form {
+  font-size: $small;
+
+  legend {
+    font-size: $medium;
+    font-weight: bold;
+  }
+}
+
 aside {
   a:hover {
     color: #000;

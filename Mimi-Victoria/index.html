@@ -1,127 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sass Demo</title>
-    <meta name="description" content="Incorporation of Sass">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style/app.css">
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:900' rel='stylesheet' type='text/css'>
-  </head>
-  <body>
-    <form>
-      <style>
-        form {
-          background-color: white;
-        }
-      </style>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Sass Demo</title>
+  <meta name="description" content="Incorporation of Sass">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style/app.css">
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:900' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div class="container-body">
+    <header role="banner">
+      <h1 class='banner-title'>Pitchfork</h1>
+      <nav role="navigation"><h1 class="hidden">main-nav</h1>
+        <ul class="main-nav">
+          <li><a href="#">NEWS</a></li>
+          <li><a href="#">REVIEWS</a></li>
+          <li><a href="#">TRACKS</a></li>
+          <li><a href="#">FEATURES</a></li>
+        </ul>
+      </nav>
+    </header>
 
-      <fieldset>
-        <label>Author 1:</label>
-        <input type="text" id="author1">
+    <main role="main">
+      <section class='inner-main'>
+        <article class="feature">
+          <img src="feature-image.jpg"></img>
 
-        <label>Title 1:</label>
-        <input type="text" id="title1">
+          <form class="create-post">
+            <fieldset>
+              <legend>Create a new post</legend>
+              <label>Author:</label>
+              <input type="text" id="author1">
 
-        <label>Subtitle 1:</label>
-        <input type="text" id="subtitle1">
-        <button id="submit1">Submit Post</button>
-      </fieldset>
+              <label>Title:</label>
+              <input type="text" id="title1">
 
-      <fieldset>
-        <label>Author 2:</label>
-        <input type="text" id="author2">
+              <label>Subtitle:</label>
+              <input type="text" id="subtitle1">
+              <button id="submit1">Submit Post</button>
+            </fieldset>
 
-        <label>Title 2:</label>
-        <input type="text" id="title2">
+            <fieldset>
+              <label>Author 2:</label>
+              <input type="text" id="author2">
 
-        <label>Subtitle 2:</label>
-        <input type="text" id="subtitle2">
-        <button id="submit2">Submit Post</button>
-      </fieldset>
-    </form>
+              <label>Title 2:</label>
+              <input type="text" id="title2">
 
-    <div class="container-body">
-      <header role="banner">
-        <h1 class='banner-title'>Pitchfork</h1>
-        <nav role="navigation"><h1 class="hidden">main-nav</h1>
-          <ul class="main-nav">
-            <li><a href="#">NEWS</a></li>
-            <li><a href="#">REVIEWS</a></li>
-            <li><a href="#">TRACKS</a></li>
-            <li><a href="#">FEATURES</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main role="main">
-        <section class='inner-main'>
-          <article class="feature">
-            <img src="feature-image.jpg" ></img>
-            <section>
-              <h1>ELECTRIC FLING</h1>
-              <h2>New York Nights</h2>
-              <p>By Andy Beta; October 8, 2014</p>
-              <p>In his latest column, Andy Beta scours New York—from a Queens museum to a summer camp upstate—trying to locate the essence of classic dancefloors through memory, imagination, and bass.</p>
+              <label>Subtitle 2:</label>
+              <input type="text" id="subtitle2">
+              <button id="submit2">Submit Post</button>
+            </fieldset>
+          </form>
+
+          <section>
+            <h1>ELECTRIC FLING</h1>
+            <h2>New York Nights</h2>
+            <p>By Andy Beta; October 8, 2014</p>
+            <p>In his latest column, Andy Beta scours New York—from a Queens museum to a summer camp upstate—trying to locate the essence of classic dancefloors through memory, imagination, and bass.</p>
+          </section>
+        </article>
+
+        <aside role="complimentary"><h1 class="hidden">Related Stories</h1>
+          <a href="#">
+            <section class="other-article">
+              <h1 id="subtitle_1">GUEST LISTS</h1>
+              <h2 id="title_1">The Bug</h2>
+              <p id="author_1">By Ian Cohen; September 5, 2014</p>
             </section>
-          </article>
-          <aside role="complimentary"><h1 class="hidden">Related Stories</h1>
-            <a href="#">
-              <section class="other-article">
-                <h1 id="subtitle_1">GUEST LISTS</h1>
-                <h2 id="title_1">The Bug</h2>
-                <p id="author_1">By Ian Cohen; September 5, 2014</p>
-              </section>
-            </a>
-            <a href="#">
-              <section class = "other-article">
-                <h1 id="subtitle_2">RISING</h1>
-                <h2  id="title_2">iLoveMakonnen</h2>
-                <p id="author_2">By Jeremy Gordon; September 4, 2014</p>
-              </section>
-            </a>
-            <a href="#">
-              <section class = "other-article">
-                <h1>OP-ED</h1>
-                <h2>Back to Mono</h2>
-                <p>By Damon Krukowski; September 3, 2014</p>
-              </section>
-            </a>
-            <a href="#">
-              <section class = "other-article">
-                <h1>Title</h1>
-                <h2>Subtitle</h2>
-                <p>Author/Date</p>
-              </section>
-            </a>
-            <a href="#">
-              <section class = "other-article">
-                <h1>Title</h1>
-                <h2>Subtitle</h2>
-                <p>Author/Date</p>
-              </section>
-            </a>
-            <a href="#">
-              <section class = "other-article">
-                <h1>Title</h1>
-                <h2>Subtitle</h2>
-                <p>Author/Date</p>
-              </section>
-            </a>
-          </aside>
-          <br class="clear">
-        </section>
-      </main>
-      <footer>
-        <nav role="navigation">
-          <ul class="footer-nav">
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">JOBS</a></li>
-            <li><a href="#">RSS</a></li>
-            <li><a href="#">ADVERTISING</a></li>
-          </ul>
-        </nav>
-      </footer>
-    <script src="js/blog-posts.js"></script>
-  </body>
+          </a>
+          <a href="#">
+            <section class = "other-article">
+              <h1 id="subtitle_2">RISING</h1>
+              <h2  id="title_2">iLoveMakonnen</h2>
+              <p id="author_2">By Jeremy Gordon; September 4, 2014</p>
+            </section>
+          </a>
+          <a href="#">
+            <section class = "other-article">
+              <h1>OP-ED</h1>
+              <h2>Back to Mono</h2>
+              <p>By Damon Krukowski; September 3, 2014</p>
+            </section>
+          </a>
+          <a href="#">
+            <section class = "other-article">
+              <h1>Title</h1>
+              <h2>Subtitle</h2>
+              <p>Author/Date</p>
+            </section>
+          </a>
+          <a href="#">
+            <section class = "other-article">
+              <h1>Title</h1>
+              <h2>Subtitle</h2>
+              <p>Author/Date</p>
+            </section>
+          </a>
+          <a href="#">
+            <section class = "other-article">
+              <h1>Title</h1>
+              <h2>Subtitle</h2>
+              <p>Author/Date</p>
+            </section>
+          </a>
+        </aside>
+
+        <br class="clear">
+      </section>
+    </main>
+
+    <footer>
+      <nav role="navigation">
+        <ul class="footer-nav">
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">JOBS</a></li>
+          <li><a href="#">RSS</a></li>
+          <li><a href="#">ADVERTISING</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </div>
+
+  <script src="js/test.js"></script>
+</body>
 </html>
