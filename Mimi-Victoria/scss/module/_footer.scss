@@ -1,0 +1,10 @@
+/* FOOTER-MODULE */
+
+.footer-nav {
+  border-top: 0.1em solid $beta-darker;
+  padding: 1em 0 5em;
+  text-align: center;
+  li {
+    @include nav-format;
+  }
+}

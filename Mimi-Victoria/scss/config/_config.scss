@@ -1,0 +1,11 @@
+// DEFINE BASE COLORS
+$alpha: #CC0000;
+$alpha-dark: darken($alpha, 10%);
+$alpha-light: lighten($alpha, 10%);
+$beta: #CCCCCC;
+$beta-dark: darken($beta, 35%);
+$beta-darker: darken($beta, 50%);
+$beta-darkest: darken($beta, 64%);
+$beta-light: lighten($beta, 10%);
+
+

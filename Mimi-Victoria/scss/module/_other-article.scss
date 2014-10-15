@@ -1,0 +1,16 @@
+/* OTHER ARTICLE-MODULE */
+$dot-border: 0.09em dotted $beta;
+
+.other-article {
+  border-top: $dot-border;
+  border-bottom: $dot-border;
+  padding: 1em;
+  border-right: 5px solid $beta;
+  &:hover {
+    border-right: 5px solid $beta-dark;
+  }
+}
+
+.other-article:last-child {
+  border-bottom: none;
+}

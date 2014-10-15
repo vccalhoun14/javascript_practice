@@ -1,0 +1,70 @@
+/* DEFINE BASE FONT FILES */
+$base: 1rem;
+
+$medium: $base;
+$small: $medium/1.618;
+$tiny: $small/1.618;
+$large: $medium * 1.618;
+$gigantor: $large * 1.618;
+
+html {
+  font-size: 18px;
+  font-family: helvetica, arial, sans-serif;
+  @include media-min (800px, 19px);
+  @include media-min (860px, 20px);
+  @include media-min (920px, 21px);
+  @include media-min (1000px, 22px);
+}
+
+h1 {
+  font-size: $small;
+  color: $alpha-light;
+}
+
+h2 {
+  font-size: $medium;
+}
+
+p {
+   font-size: $small;
+   color: $beta-dark;
+}
+
+a {
+  font-size: $small;
+}
+
+.feature {
+  h2 {
+    font-size: $large;
+  }
+  p:last-child {
+    color: $beta-darker;
+  }
+}
+
+.banner-title {
+  font-family: 'Merriweather', serif;
+  font-size: $gigantor;
+}
+
+aside {
+  a:hover {
+    color: #000;
+  }
+}
+
+.main-nav {
+  a:hover {
+    color: red;
+  }
+}
+
+.footer-nav {
+  a {
+    color: $beta;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

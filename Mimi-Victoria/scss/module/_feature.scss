@@ -1,0 +1,12 @@
+/* FEATURE-MODULE */
+.feature {
+  section {
+    padding: 2em;
+    @media (max-width: $tablet) {
+      padding: 1em;
+    }
+  }
+  img {
+    width: 100%;
+  }
+}

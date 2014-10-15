@@ -1,0 +1,27 @@
+/* BASE */
+body, h1, ul, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  padding: 0.3em 0;
+}
+
+p {
+  padding: 0.5em 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.hidden {
+  display:none;
+}
+
+.clear {
+  clear: both;
+}
+

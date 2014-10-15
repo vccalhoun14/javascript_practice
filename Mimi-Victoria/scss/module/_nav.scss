@@ -1,0 +1,16 @@
+/* NAV-MODULE */
+
+.banner-title {
+  text-align: center;
+  padding-top: 1.5em;
+  color: #000;
+}
+
+.main-nav {
+  border-top: 0.1em solid #000;
+  border-bottom: 0.1em solid $beta;
+  text-align: center;
+  li {
+    @include nav-format;
+  }
+}
